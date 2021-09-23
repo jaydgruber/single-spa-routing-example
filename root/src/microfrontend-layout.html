@@ -18,11 +18,21 @@
   -->
 
   <main>
-    <route default>
+    <nav>
+      <a href="/">Default</a>
+      |
       <a href="/vue-3-app">vue-3-app</a>
+      |
+      <a href="/vue-2-app">vue-2-app</a>
+    </nav>
+    <route default>
+      <h2>Default route</h2>
     </route>
     <route path="vue-3-app">
       <application name="vue-3-app"></application>
+    </route>
+    <route path="vue-2-app">
+      <application name="vue-2-app"></application>
     </route>
   </main>
 </single-spa-router>
