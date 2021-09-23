@@ -2,6 +2,7 @@ import { h, createApp } from 'vue';
 import singleSpaVue from 'single-spa-vue';
 
 import App from './App.vue';
+import router from './router'
 
 const vueLifecycles = singleSpaVue({
   createApp,
@@ -19,6 +20,9 @@ const vueLifecycles = singleSpaVue({
       });
     },
   },
+  handleInstance: (app) => {
+    app.use(router);
+  }
 });
 
 export const bootstrap = vueLifecycles.bootstrap;
