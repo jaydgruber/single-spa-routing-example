@@ -3,4 +3,7 @@ module.exports = {
     config.externals(['single-spa']);
   },
   runtimeCompiler: true,
+  devServer: {
+    port: 8081
+  }
 };
