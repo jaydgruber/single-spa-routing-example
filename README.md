@@ -42,5 +42,6 @@ While I think the fix might ultimately be in the [vuejs/vue-router-next](https:/
 
 ## References
 
+- This project was written as an example/demonstration of this issue I opened: [single-spa/single-spa-vue/issues/89](https://github.com/single-spa/single-spa-vue/issues/89)
 - I think this is related to [vuejs/vue-router/pull/3172](https://github.com/vuejs/vue-router/pull/3172).
   - So seems like this is fixed in vue-router 3, but broken in vue-router 4? I am not clear how the vue-router & vue-router-next repos are kept in sync.
